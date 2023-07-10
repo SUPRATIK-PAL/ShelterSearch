@@ -1,0 +1,23 @@
+.card{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 80px 20px;
+    display: flex;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05),
+                0 15px 40px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    transition: 0.4s;
+  }
+  .card:hover img {
+    transform: scale(1.15);
+  }
